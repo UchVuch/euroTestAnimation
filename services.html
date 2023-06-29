@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>euroExchange</title>
+  <link rel="stylesheet" href="./css/itc-custom-select.css">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="#!">
+        <img src="./images/logo-2x.png" alt="Logo euroExchange" width="204" height="34">
+      </a>
+      <nav class="nav header__nav" data-menu="menu">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-menu-link>Home</a></li>
+          <li>
+            <div class="service__select">
+              <!-- Кнопка для открытия выпадающего списка -->
+              <a class="service__toggle nav__link" data-menu-link="services">Service</a>
+              <!-- Выпадающий список -->
+              <div class="service__dropdown">
+                <ul class="service__options">
+                  <li class="service__option">
+                    <a class="nav__link" href="service.html">E-money Multi-Currency Account</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service1.html">Currency Exchange</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="https://dev2.exch.tech/">Debit and Prepaid Cards</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service4.html">Merchant Accounts</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service3.html">Domestic Payment Processing</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service2.html">Family Remittances</a>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="nav__link" href="about.html" data-menu-link>About us</a></li>
+          <li><a class="nav__link" href="#!" data-menu-link>News</a></li>
+          <li><a class="nav__link" href="contact.html" data-menu-link>Contact</a></li>
+          <li><a class="nav__link" href="faq.html" data-menu-link>FAQ</a></li>
+        </ul>
+        <div class="user__buttons">
+          <button class="button user__button-sign">Sign up</button>
+          <div class="itc-select user__button-lang" id="select-1">
+            <!-- Кнопка для открытия выпадающего списка -->
+            <button type="button" class="itc-select__toggle" name="lang" value="en" data-select="toggle"
+              data-index="0">En</button>
+            <!-- Выпадающий список -->
+            <div class="itc-select__dropdown">
+              <ul class="itc-select__options">
+                <li class="itc-select__option  itc-select__option_selected" data-select="option" data-value="en"
+                  data-index="0">En</li>
+                <li class="itc-select__option" data-select="option" data-value="es" data-index="1">Es</li>
+                <li class="itc-select__option" data-select="option" data-value="et" data-index="2">It</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__nav-close" data-menu="close" title="Close menu">
+          <span class="header__nav-close-line"></span>
+          <span class="header__nav-close-line"></span>
+        </div>
+      </nav>
+      <div class="burger-menu" data-menu="open" title="Open menu">
+        <span class="burger-menu-item burger-menu-item-first"></span>
+        <span class="burger-menu-item burger-menu-item-second"></span>
+        <span class="burger-menu-item burger-menu-item-third"></span>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper services-page" id="home">
+    <main class="main container">
+      <div class="decor-bg-2">
+        <img src="./images/decor-2.png" alt="decor" aria-hidden="true" width="1158" height="1158">
+      </div>
+      <div class="decor-bg-3">
+        <img src="./images/decor-3.png" alt="decor" aria-hidden="true" width="1068" height="1365">
+      </div>
+      <section class="services-first bg-blur-image animate-fade-start" data-animate>
+        <h1 class="services-first__title title gradient-text-primary">Our Services - Comprehensive financial solutions
+          for Your Local
+          and International Payment Needs</h1>
+        <p class="services-first__text">
+          Experience a world of fast, reliable, and cost-efficient financial services inder one roof
+        </p>
+        <ul class="services-first__list">
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/deposit.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">E-money Multi-Currency Accounts</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Navigate the global financial markets effortlessly with our E-money Multi-Currency
+                Accounts. Maintain and transact in different currencies without the usual hassle.
+                Experience
+                the freedom of seamless global transactions right at your fingertips.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="service.html">
+                Get in touch
+              </a>
+            </div>
+          </li>
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/currency.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">Currency Exchange</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Unlock access to over 30 currencies for your payment processing needs. With Euro
+                Exchange, get exceptionally favorable rates that make your transactions more profitable. Go
+                global without worrying about currency restrictions.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="service1.html">
+                Start Now
+              </a>
+            </div>
+          </li>
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/debit.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">Debit and Prepaid Cards</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Instantly access your funds with our Debit and Prepaid Cards. Whether you're at a local store
+                or browsing the internet, get the convenience of cashless transactions with our widely
+                accepted cards. Plus, you get the added benefit of accessing global ATM networks.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="https://dev2.exch.tech/">
+                Apply Now
+              </a>
+            </div>
+          </li>
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/merchant.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">Merchant Accounts</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Power your online business with our Internet Shop Acquiring service. From setng up online
+                payment methods on your website to creating standalone payment links for your clients,
+                we've got you covered. Elevate your business with efficient payment solutions.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="service4.html">
+                Contact Sales
+              </a>
+            </div>
+          </li>
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/planet.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">Domestic Payment Processing</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Experience speedy and cost-effective domestic transfers like never before. Gain access to
+                SEPA, FPS, and FedWire transfers and deliver funds on the same day with reduced costs. Connect to your
+                clients or loved ones with efficiency and speed.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="service3.html">
+                Get Started
+              </a>
+            </div>
+          </li>
+          <li class="services-first__item servisec-card">
+            <div class="servisec-card__top">
+              <div class="servisec-card__image">
+                <div class="services-left-icon">
+                  <img src="./images/services-icons/family.png" alt="Extensive Access image" aria-hidden="true"
+                    width="123" height="122">
+                </div>
+              </div>
+              <h2 class="services-card__title">Family Remittances</h2>
+            </div>
+            <div class="servisec-card__bottom">
+              <p class="services-card__text">
+                Send money home to your family quickly and with low fees. Our Family RemiUances service
+                is designed keeping in mind the needs of expats and immigrants, enabling them to support
+                their families back home in a hassle-free manner.
+              </p>
+              <a class="services-card__link gradient-text-accent" href="service2.html">
+                Send Money Now
+              </a>
+            </div>
+          </li>
+        </ul>
+        <p class="note">Note: All applicants must be 18 years of age or older</p>
+      </section>
+      <div class="decor-bg-3-mob">
+        <img src="./images/decor-3-mob.png" alt="decor" aria-hidden="true" width="305" height="620">
+      </div>
+      <div class="decor-bg-4-mob">
+        <img src="./images/decor-4-mob.png" alt="decor" aria-hidden="true" width="243" height="594">
+      </div>
+    </main>
+    <footer class="footer animate-fade-start" data-animate>
+      <div class="footer__top container">
+        <div class="footer__content">
+          <a class="logo" href="#!">
+            <img src="./images/logo-footer-2x.png" alt="Logo euroExchange" width="266" height="44">
+          </a>
+          <p>
+            Euro Exchange Securities is a 100% dedicated company to give back to our clients the confidence
+            deposited in
+            us. This presentation on Euro Exchange aims to familiarize the reader with the company as well
+            as provide
+            basic information useful.
+          </p>
+          <p class="footer__privacy-links">
+            <a href="#1" target="_blank">General T&C</a>
+            <a href="#1" target="_blank">Privacy policy</a>
+          </p>
+          <p>
+            Euro Exchange maintains a rigorous anti-money laundering program as our top priority is to
+            ensure full
+            compliance with the laws.
+          </p>
+        </div>
+        <div class="footer__content">
+          <h2 class="footer__title">Contact Us</h2>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item contact-address">
+              <address>
+                United Kingdom (Head office)<br>
+                107 Great Portland Street<br>
+                London, W1W 6QG
+              </address>
+            </li>
+            <li class="footer__contact-item contact-tel">
+              <a href="tel:+4402076363430">+44 (0) 207 636 3430</a>
+            </li>
+            <li class="footer__contact-item contact-phone">
+              <span>+44 (0)207 637 3125</span>
+            </li>
+            <li class="footer__contact-item contact-mail">
+              <a href="mailto:sac@euroexchangesecurities.co.uky">sac@euroexchangesecurities.co.uk</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h2 class="footer__title">Follow Us</h2>
+          <ul class="footer__social-links">
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/twitter.svg" alt="Twitter" width="54" height="54">
+              </a>
+            </li>
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/facebook.svg" alt="Facebook" width="54" height="54">
+              </a>
+            </li>
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/google-plus.svg" alt="Google" width="54" height="54">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright container">
+        <span>© 2023 Euro Exchange Securities UK Ltd. All Rights Reserved</span>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/itc-custom-select.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

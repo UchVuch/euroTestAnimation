@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <title>euroExchange</title>
+  <link rel="stylesheet" href="./css/itc-custom-select.css">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
+</head>
+
+<body class="body">
+  <header class="header">
+    <div class="header__inner container">
+      <a class="logo" href="#!">
+        <img src="./images/logo-2x.png" alt="Logo euroExchange" width="204" height="34">
+      </a>
+      <nav class="nav header__nav" data-menu="menu">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="index.html" data-menu-link>Home</a></li>
+          <li>
+            <div class="service__select">
+              <!-- Кнопка для открытия выпадающего списка -->
+              <a class="service__toggle nav__link" data-menu-link="services">Service</a>
+              <!-- Выпадающий список -->
+              <div class="service__dropdown">
+                <ul class="service__options">
+                  <li class="service__option">
+                    <a class="nav__link" href="service.html">E-money Multi-Currency Account</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service1.html">Currency Exchange</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="https://dev2.exch.tech/">Debit and Prepaid Cards</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="https://dev2.exch.tech/">Debit and Prepaid Cards</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service4.html">Merchant Accounts</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service3.html">Domestic Payment Processing</a>
+                  </li>
+                  <li class="service__option">
+                    <a class="nav__link" href="service2.html">Family Remittances</a>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li><a class="nav__link" href="about.html" data-menu-link>About us</a></li>
+          <li><a class="nav__link" href="#!" data-menu-link>News</a></li>
+          <li><a class="nav__link" href="contact.html" data-menu-link>Contact</a></li>
+          <li><a class="nav__link" href="faq.html" data-menu-link>FAQ</a></li>
+        </ul>
+        <div class="user__buttons">
+          <button class="button user__button-sign">Sign up</button>
+          <div class="itc-select user__button-lang" id="select-1">
+            <!-- Кнопка для открытия выпадающего списка -->
+            <button type="button" class="itc-select__toggle" name="lang" value="en" data-select="toggle"
+              data-index="0">En</button>
+            <!-- Выпадающий список -->
+            <div class="itc-select__dropdown">
+              <ul class="itc-select__options">
+                <li class="itc-select__option  itc-select__option_selected" data-select="option" data-value="en"
+                  data-index="0">En</li>
+                <li class="itc-select__option" data-select="option" data-value="es" data-index="1">Es</li>
+                <li class="itc-select__option" data-select="option" data-value="et" data-index="2">It</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__nav-close" data-menu="close" title="Close menu">
+          <span class="header__nav-close-line"></span>
+          <span class="header__nav-close-line"></span>
+        </div>
+      </nav>
+      <div class="burger-menu" data-menu="open" title="Open menu">
+        <span class="burger-menu-item burger-menu-item-first"></span>
+        <span class="burger-menu-item burger-menu-item-second"></span>
+        <span class="burger-menu-item burger-menu-item-third"></span>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper wrapper-bg" id="home">
+    <main class="main container">
+      <div class="decor-bg-2">
+        <img src="./images/decor-2.png" alt="decor" aria-hidden="true" width="1158" height="1158">
+      </div>
+      <div class="decor-bg-3">
+        <img src="./images/decor-3.png" alt="decor" aria-hidden="true" width="1068" height="1365">
+      </div>
+      <div class="decor-bg-4">
+        <img src="./images/decor-4.png" alt="decor" aria-hidden="true" width="774" height="1080">
+      </div>
+      <section class="hero animate-fade-first">
+        <div class="decor-bg-1"> <img src="./images/decor-1.png" alt="decor" aria-hidden="true" width="530"
+            height="530"> </div>
+        <div class="hero__content">
+          <h1 class="hero__title">Euro Exchange - Your Reliable Partner for International Payments</h1>
+          <p class="hero__text">
+            Fast, Reliable and a Wide Reach to International Financial Markets
+          </p>
+          <button class="button hero__button">Sign-up</button>
+        </div>
+      </section>
+      <section class="service animate-fade-first" id="service">
+        <h2 class="visually-hidden">Our service</h2>
+        <ul class="service__list">
+          <li class="service__item">
+            <picture>
+              <source srcset="./images/earth.png, ./images/earth-2x.png 2x">
+              <img class="service__item-image" src="./images/earth.png" alt="The Earth" aria-hidden="true" width="70"
+                height="64">
+            </picture>
+            <h3 class="service__item-title gradient-text-primary">International Payment Processin </h3>
+            <p>
+              Making transactions across borders has never
+              been easier.
+              Trust Euro Exchange to deliver your payments swijly and securely
+            </p>
+          </li>
+          <li class="service__item">
+            <picture>
+              <source srcset="./images/cards.png, ./images/cards-2x.png 2x">
+              <img class="service__item-image" src="./images/cards.png" alt="Cards image" aria-hidden="true" width="67"
+                height="64">
+            </picture>
+            <h3 class="service__item-title gradient-text-primary">Payments in 30+ Currencies</h3>
+            <p>
+              With Euro Exchange, you're not limited by currency.
+              Send or receive payments in over 30 different currencies and embrace true financial
+              freedom.
+            </p>
+          </li>
+          <li class="service__item">
+            <picture>
+              <source srcset="./images/deposit.png, ./images/deposit-2x.png 2x">
+              <img class="about__item-image" src="./images/deposit.png" alt="Deposit image" aria-hidden="true"
+                width="67" height="64">
+            </picture>
+            <h3 class="service__item-title gradient-text-primary">Instant Access with Debit and Prepaid Cards</h3>
+            <p>
+              Get immediate access to your money
+              when you need it. Our Debit and Prepaid cards give you the power to control your finances.
+            </p>
+          </li>
+          <li class="service__item">
+            <picture>
+              <source srcset="./images/currency.png, ./images/currency-2x.png 2x">
+              <img class="service__item-image" src="./images/currency.png" alt="Currency image" aria-hidden="true"
+                width="67" height="64">
+            </picture>
+            <h3 class="service__item-title gradient-text-primary">Merchant Accounts </h3>
+            <p>
+              Power your online business with our Internet Shop Acquiring service. From setng up online
+              payment methods on your website to creating standalone payment links for your clients,
+              we've got you covered.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about animate-fade-start" id="about" data-animate>
+        <div class="about__content">
+          <h2 class="about__title title gradient-text-primary">Experience the power of instant global payments</h2>
+          <div class="">
+            <img class="about__image-mobile" src="./images/experience-pic.png" alt="Man with laptop" width="579"
+              height="579">
+          </div>
+          <div class="about__text">
+            <p>
+              Euro Exchange connects businesses and
+              individuals to financial markets around the world.
+
+            </p>
+            <p>
+              With us, you get instant access to your<br>
+              money through Debit and Prepaid cards and can make transactions in 30+ currencies.
+            </p>
+            <p>
+              Join us
+              to discover a world of seamless transactions.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img class="about__image" src="./images/experience-pic.png" alt="Man with laptop" width="579" height="579">
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__inner animate-fade-start" data-animate>
+          <div class="banner__content">
+            <h2 class="title banner__title">Ready to experience financial transactions like never before? </h2>
+            <p class="banner__text">
+              Sign-up today or explore our
+              [Services] to learn more.
+            </p>
+          </div>
+          <button class="button banner__button">
+            <span class="gradient-text-accent">Sign up</span>
+            <img src="./images/icons/signup-icon.svg" alt="arrow">
+          </button>
+        </div>
+      </section>
+      <section class="partners animate-fade-start" data-animate>
+        <div class="decor-bg-2-mob">
+          <img src="./images/decor-2-mob.png" alt="decor" width="275" height="641">
+        </div>
+        <h2 class="title gradient-text-primary partners__title">Our Trusted Partners</h2>
+        <div class="partners__inner">
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="./images/partners/swift.jfif" alt="SWIFT" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/fps.png" alt="FPS" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/mastercard.png" alt="Mastercard" width="178" height="178">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/visa.png" alt="Visa" width="178" height="178">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/fedwire.png" alt="FedWire" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/sepa.jfif" alt="Sepa" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/bacs.png" alt="Bacs" width="300" height="88">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/chaps.png" alt="CHAPS" width="187" height="81">
+            </li>
+          </ul>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <img src="./images/partners/swift.jfif" alt="SWIFT" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/fps.png" alt="FPS" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/mastercard.png" alt="Mastercard" width="178" height="178">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/visa.png" alt="Visa" width="178" height="178">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/fedwire.png" alt="FedWire" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/sepa.jfif" alt="Sepa" width="187" height="81">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/bacs.png" alt="Bacs" width="300" height="88">
+            </li>
+            <li class="partners__item">
+              <img src="./images/partners/chaps.png" alt="CHAPS" width="187" height="81">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="facts animate-fade-start" data-animate>
+        <h2 class="title gradient-text-primary facts__title">Impressive Facts</h2>
+        <div class="facts__content">
+          <ul class="facts__list">
+            <li class="facts__item">
+              Handling over <b><span id="out1"></span>$</b> of<br> transactions every month 
+            </li>
+            <li class="facts__item">
+              Facilitating seamless transactions across <b><span id="out2"></span>+</b> countries
+            </li>
+            <li class="facts__item">
+              Through our partners, we offer <b><span id="out3"></span>+</b> physical locations
+              worldwide
+            </li>
+          </ul>
+          <div>
+            <img class="facts__image" src="./images/facts-pic.png" alt="Men with laptops" width="463" height="537">
+          </div>
+        </div>
+      </section>
+      <section class="faq animate-fade-start" id="faq" data-animate>
+        <h2 class="title gradient-text-primary faq__title">FAQ</h2>
+        <ul class="faq__list">
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">What is Euro Exchange?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                Euro Exchange is a licensed E-money institution based in the UK, offering services such as
+                international payment processing, multi-currency accounts, debit and prepaid cards,
+                merchant accounts, and family remittances.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">Who can use Euro Exchange services?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                Euro Exchange services are available for private individuals, corporate entities, and financial
+                institutions. All applicants must be 18+ years of age
+              </p>
+            </div>
+          </li>
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">What currencies are supported by Euro Exchange?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                Euro Exchange supports over 30+ currencies, making international payments easy and
+                hassle-free.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">Can I make transfers to non-European countries with Euro Exchange?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                Yes, through our extensive payment corridor network, you can send money to various
+                countries outside Europe.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">What documents are required to use Euro Exchange services?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                A valid form of identification is needed to use Euro Exchange services. For specific services
+                such as opening an E-money account, an online KYC process must be completed.
+              </p>
+            </div>
+          </li>
+          <li class="faq__item" data-accordeon>
+            <div class="faq__item-title-wrapper">
+              <div class="faq__item-arrow">
+                <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 2L10 10L18 2" stroke="#192f6c" stroke-width="3.2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="faq__item-title-w">
+                <h3 class="faq__item-title">How do I apply for Euro Exchange's services?</h3>
+              </div>
+            </div>
+            <div class="faq__item-content">
+              <p>
+                You can apply by filling out the application form available on our website or contact our sales
+                representatives.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="decor-bg-3-mob">
+        <img src="./images/decor-3-mob.png" alt="decor" aria-hidden="true" width="305" height="620">
+      </div>
+      <div class="decor-bg-4-mob">
+        <img src="./images/decor-4-mob.png" alt="decor" aria-hidden="true" width="243" height="594">
+      </div>
+    </main>
+    <footer class="footer animate-fade-start" data-animate>
+      <div class="footer__top container">
+        <div class="footer__content">
+          <a class="logo" href="#!">
+            <img src="./images/logo-footer-2x.png" alt="Logo euroExchange" width="266" height="44">
+          </a>
+          <p>
+            Euro Exchange Securities is a 100% dedicated company to give back to our clients the confidence deposited in
+            us. This presentation on Euro Exchange aims to familiarize the reader with the company as well as provide
+            basic information useful.
+          </p>
+          <p class="footer__privacy-links">
+            <a href="#1" target="_blank">General T&C</a>
+            <a href="#1" target="_blank">Privacy policy</a>
+          </p>
+          <p>
+            Euro Exchange maintains a rigorous anti-money laundering program as our top priority is to ensure full
+            compliance with the laws.
+          </p>
+        </div>
+        <div class="footer__content">
+          <h2 class="footer__title">Contact Us</h2>
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item contact-address">
+              <address>
+                United Kingdom (Head office)<br>
+                107 Great Portland Street<br>
+                London, W1W 6QG
+              </address>
+            </li>
+            <li class="footer__contact-item contact-tel">
+              <a href="tel:+4402076363430">+44 (0) 207 636 3430</a>
+            </li>
+            <li class="footer__contact-item contact-phone">
+              <span>+44 (0)207 637 3125</span>
+            </li>
+            <li class="footer__contact-item contact-mail">
+              <a href="mailto:sac@euroexchangesecurities.co.uky">sac@euroexchangesecurities.co.uk</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h2 class="footer__title">Follow Us</h2>
+          <ul class="footer__social-links">
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/twitter.svg" alt="Twitter" width="54" height="54">
+              </a>
+            </li>
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/facebook.svg" alt="Facebook" width="54" height="54">
+              </a>
+            </li>
+            <li class="footer__social-link">
+              <a href="#!" target="_blank">
+                <img src="./images/icons/google-plus.svg" alt="Google" width="54" height="54">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright container">
+        <span>© 2023 Euro Exchange Securities UK Ltd. All Rights Reserved</span>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/itc-custom-select.js"></script>
+  <script src="./js/counterup.min.js"></script>
+  <script src="./js/counter.js" type="module"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
